@@ -2,7 +2,7 @@
 	<property file="build.properties" />
 	<resolvepath propertyName="repo.dir.resolved" file="${repo.config.folder}" />
 	<resolvepath propertyName="satis.web.resolved" file="${satis.web}" />
-	<resolvepath propertyName="ssatis.home.resolved" file="${satis.home}" />
+	<resolvepath propertyName="satis.home.resolved" file="${satis.home}" />
 
 	<target name="prepare">
 		<delete dir="${repo.dir.resolved}" /> 
