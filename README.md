@@ -4,12 +4,9 @@ repositories-packages-utils
 
 php composer.phar create-project composer/satis --stability=dev --keep-vcs
 
-php bin/satis build composer.json build-dir
 
+create file build.properties
 
-
-build.properties
-
-satis.home=satis
-satis.web=web
-repo.config.folder=config
+    satis.home=satis
+    satis.web=web
+    repo.config.folder=config
