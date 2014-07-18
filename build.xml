@@ -1,0 +1,13 @@
+<project name="build package repositories web" default="build" basedir=".">
+	<property file="build.properties" />
+	<resolvepath propertyName="repo.dir.resolved" file="${repo.config.folder}" />
+	<target name="prepare">
+		<delete dir="${repo.dir.resolved}" />
+	</target>
+	<target name="build" depends="prepare">
+		<gitclone
+    		repository="http://github.com/oat-sa/repositories-packages.git"
+			targetPath="${repo.dir.resolved}" />
+		<exec command="php ${satis.home}/bin/satis build ${repo.dir.resolved}/config.json ${satis.web}" />
+	</target>
+</project>
