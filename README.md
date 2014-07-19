@@ -10,3 +10,4 @@ create file build.properties
     satis.home=satis
     satis.web=web
     repo.config.folder=config
+    github.auth.token=
