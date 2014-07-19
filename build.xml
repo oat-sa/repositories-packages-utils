@@ -1,5 +1,5 @@
 <project name="build package repositories web" default="build" basedir=".">
-	<property file="build.properties" />
+	<property file="../build.properties" />
 	<resolvepath propertyName="repo.dir.resolved" file="${repo.config.folder}" />
 	<resolvepath propertyName="satis.web.resolved" file="${satis.web}" />
 	<resolvepath propertyName="satis.home.resolved" file="${satis.home}" />
