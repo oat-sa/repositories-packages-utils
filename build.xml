@@ -14,6 +14,6 @@
 			targetPath="${repo.dir.resolved}" />
 		<exec command="${satis.home}/vendor/bin/composer config --global github-oauth.github.com ${github.auth.token}" />
 
-		<exec command="php ${satis.home.resolved}/bin/satis build ${repo.dir.resolved}/config.json ${satis.web.resolved}" />
+		<exec command="php ${satis.home.resolved}/bin/satis build ${repo.dir.resolved}/config.json ${satis.web.resolved}" passthru="true"/>
 	</target>
 </project>
